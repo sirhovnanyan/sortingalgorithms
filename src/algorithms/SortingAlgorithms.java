@@ -12,10 +12,11 @@ public class SortingAlgorithms {
                     array[j] = array[j + 1];
                     array[j + 1] = temp;
                     isSorted = true;
+
+                      if (isSorted == false) {
+                          break;
+                      }
                 }
-            }
-            if (isSorted == false) {
-                break;
             }
         }
     }
